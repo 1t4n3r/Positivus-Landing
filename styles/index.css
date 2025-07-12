@@ -494,6 +494,96 @@ html {
     line-height: 1.4;
 }
 
+.testimonials {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    margin-bottom: 140px;
+}
+
+.testimonials_description {
+    display: flex;
+    gap: 40px;
+}
+
+.testimonials_description h2 {
+    font-weight: 500;
+    font-size: 40px;
+    border-radius: 7px;
+    padding-inline: 7px;
+    background-color: var(--green);
+}
+
+.testimonials_description p {
+    font-size: 18px;
+}
+
+.contactus {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    padding-bottom: 140px;
+}
+
+.contactus_description {
+    display: flex;
+    gap: 40px;
+}
+
+.contactus_description h2 {
+    background-color: var(--green);
+    border-radius: 7px;
+    padding-inline: 7px;
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.contactus_description p {
+    font-size: 18px;
+}
+
+.contactus_form {
+    padding: 60px 100px 80px 100px;
+    border-radius: 45px;
+    background-color: var(--grey);
+}
+
+.contactus_fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.form_radio {
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+
+}
+
+.form_radio input {
+
+}
+
+.form_radio label {
+
+}
+
+.form_inputs {
+
+}
+
+.form_inputs label {
+
+}
+
+.form_inputs input {
+
+}
+
+.form_button {
+
+}
 
 
 
