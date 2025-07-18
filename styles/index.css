@@ -19,13 +19,21 @@ li {
     list-style: none;
 }
 
-._container {
-    width: 1240px;
-    margin: 0 auto;
+fieldset {
+    border: none;
+}
+
+label, button {
+    cursor: pointer;
 }
 
 html {
     font-family: 'Space Grotesk', sans-serif;
+}
+
+._container {
+    width: 1240px;
+    margin: 0 auto;
 }
 
 .header {
@@ -519,6 +527,7 @@ html {
 }
 
 .contactus {
+    position: relative;
     display: flex;
     flex-direction: column;
     gap: 80px;
@@ -552,63 +561,216 @@ html {
     display: flex;
     flex-direction: column;
     gap: 40px;
+    width: 556px;
 }
 
 .form_radio {
     display: flex;
     flex-direction: row;
     gap: 35px;
-
 }
 
-.form_radio input {
+.radio {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
 
+.custom_radio {
+    position: relative;
+    display: block;
+    width: 28px;
+    height: 28px;
+    border: 1px solid #000000;
+    border-radius: 29px;
+    background-color: #FFFFFF;
+}
+
+.custom_radio::before {
+    display: none;
+    content: "";
+    width: 16px;
+    height: 16px;
+    background-color: var(--green);
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.real_radio:checked + .custom_radio::before {
+    display: block;
+}
+
+.real_radio {
+    display: none;
 }
 
 .form_radio label {
-
+    font-size: 18px;
 }
 
 .form_inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
 
+.form_inputs div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.form_input_text {
+    height: 59px;
+    border: 1px solid #000000;
+    border-radius: 14px;
+    padding: 18px 30px;
+    font-size: 18px;
+}
+
+.form_custom {
+    height: 190px;
+    resize: none;
+    font-family: 'Space Grotesk', sans-serif;
 }
 
 .form_inputs label {
-
-}
-
-.form_inputs input {
-
+    font-size: 16px;
+    line-height: 1.75;
 }
 
 .form_button {
-
+    width: 100%;
+    height: 68px;
+    border-radius: 14px;
+    border: none;
+    padding: 20px 35px;
+    background-color: var(--dark);
 }
 
+.form_button_text {
+    color: #FFFFFF;
+    line-height: 1.4;
+    font-size: 20px;
+}
 
+.contactus_img {
+    position: absolute;
+    top: 193.5px;
+    left: 873px;
+}
 
+.footer {
+    background-color: var(--dark);
+    border-radius: 45px 45px 0 0;
+    padding: 55px 60px 50px 60px;
+}
 
+.footer_nav {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 66px;
+}
 
+.footer_links {
+    display: flex;
+    gap: 40px;
+}
 
+.footer_links a {
+    color: #FFFFFF;
+    text-decoration: underline;
+    font-size: 18px;
+}
 
+.footer_socials {
+    display: flex;
+    gap: 20px;
+}
 
+.footer_contactus {
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+}
 
+.footer_info {
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+}
 
+.footer_info h4 {
+    background-color: var(--green);
+    padding-inline: 7px;
+    border-radius: 7px;
+    font-weight: 500;
+    font-size: 20px;
+    width: 126px;
+}
 
+.footer_info_contacts {
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-style: normal;
+    font-size: 18px;
+}
 
+.footer_info_contacts a {
+    color: #FFFFFF;
+}
 
+.footer_cta {
+    border-radius: 14px;
+    background-color: #292A32;
+    padding: 58px 40px;
+    display: flex;
+    gap: 20px;
+}
 
+.footer_cta input {
+    border: 1px solid #FFFFFF;
+    border-radius: 14px;
+    padding: 22px 35px;
+    color: #FFFFFF;
+    font-size: 18px;
+    background-color: #292A32;
+}
 
+.footer_cta input::placeholder {
+    color: #FFFFFF;
+}
 
+.footer_cta_button {
+    border-radius: 14px;
+    padding: 20px 35px;
+    background-color: var(--green);
+    border: none;
+    font-size: 20px;
+    line-height: 1.4;
+}
 
+.footer_line {
+    width: 1120px;
+    height: 1px;
+    background-color: #FFFFFF;
+}
 
+.footer_copyright {
+    display: flex;
+    gap: 40px;
+    margin-top: 50px;
+    font-size: 18px;
+    color: #FFFFFF;
+    line-height: 1.56;
+}
 
-
-
-
-
-
-
-
-
-
+.footer_copyright a {
+    color: #FFFFFF;
+    text-decoration: underline;
+}
